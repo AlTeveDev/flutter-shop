@@ -21,4 +21,8 @@ List<Category> demo_categories = [
     icon: "assets/icons/Tshirt.svg",
     title: "Tshirt",
   ),
+  Category(
+    icon: "assets/icons/Heart.svg",
+    title: "Loved",
+  ),
 ];

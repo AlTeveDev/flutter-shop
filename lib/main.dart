@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish/constants.dart';
 import 'package:stylish/screens/home/home_screen.dart';
 
 void main() {
@@ -17,9 +18,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         fontFamily: "Gordita",
+        scaffoldBackgroundColor: bgColor,
         textTheme: const TextTheme(
-          bodyText2: TextStyle(color: Colors.black54),
+          headlineSmall: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
+          bodyLarge: TextStyle(fontWeight: FontWeight.w500, fontSize: 28),
+          bodyMedium: TextStyle(color: Colors.black54),
+          bodySmall: TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
         ),
+        useMaterial3: true,
       ),
       home: const HomeScreen(),
     );
